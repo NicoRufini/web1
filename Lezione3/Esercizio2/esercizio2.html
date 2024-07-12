@@ -19,27 +19,34 @@ I dati che raccoglie la form devono essere, tra gli altri:
     </head>
     <body>
         <form action="" method="post"> <!-- Set the action attribute to the URL where the form data will be sent (usually to a server-side script) -->
-            <label for="em"> <!-- la data di nascita -->
-                Email:
+            <label> <!-- la data di nascita -->  <!-- <label for=""> -->
+              Date of birth:
             </label>
-            <input type="text" id="em" name="username" placeholder="Enter your Username" required>
+            <input type="date" name="" required>
                 
-            <label for="pw"> <!-- il file contenente il CV -->
-                Password:
+            <label> <!-- il file contenente il CV -->
+                Curriculum:
             </label>
-            <input type="password" id="pw" name="password" placeholder="Enter your Password" required>
+            <input type="file" name="" placeholder="" required>
+            <!-- <input type="reset" value="remove"> -->
 
             <!-- -->
     
-            <label for="em"> <!-- indirizzo di residenza -->
-                Email:
+            <label> <!-- sesso -->
+              Education:
             </label>
-            <input type="text" id="em" name="username" placeholder="Enter your Username" required>
+            <input type="text" name="" required>
+
+            <label> <!-- indirizzo di residenza -->
+              Address:
+            </label>
+            <!-- <textarea name="address"></textarea> -->
+            <input type="" name="" placeholder="Enter your address" required>
                 
-            <label for="pw"> <!-- istruzione -->
-                Password:
+            <label> <!-- istruzione -->
+              Education:
             </label>
-            <input type="password" id="pw" name="password" placeholder="Enter your Password" required>
+            <input type="text" name="" placeholder="???" required> 
 
             <button type="submit" onclick="solve()">
                 Submit
