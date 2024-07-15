@@ -9,7 +9,17 @@ Nella pagina proporre all'utente il link per la registrazione qualora non fosse 
 <html>
     <head>
         <title>ESERCIZIO 1: costruiamo una form per il login</title>
+        <style>
+            body {text-align: center; justify-content: center; font-family: sans-serif;}
+            .main {text-align: center; width: 500px; background-color: whitesmoke; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);}
+            label {display: block; text-align: start;}
+            input {display: block;}
+            #nore {text-align: center;}
+            button {background-color: rgb(0, 110, 255);}
+            
+        </style>
     </head>
+    
     <body>
         <div class="main">
         <form action="" method="post"> <!-- Set the action attribute to the URL where the form data will be sent (usually to a server-side script) -->
@@ -29,6 +39,9 @@ Nella pagina proporre all'utente il link per la registrazione qualora non fosse 
             </button>
         </div>
         </form>
+        <p id="nore">
+            Not registered? <a href="#">Create an account</a>
+        </p>
     </div>
     </body>
 </html>
