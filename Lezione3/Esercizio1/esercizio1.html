@@ -11,6 +11,7 @@ Nella pagina proporre all'utente il link per la registrazione qualora non fosse 
         <title>ESERCIZIO 1: costruiamo una form per il login</title>
     </head>
     <body>
+        <div class="main">
         <form action="" method="post"> <!-- Set the action attribute to the URL where the form data will be sent (usually to a server-side script) -->
             <label for="em">
                 Email:
@@ -22,9 +23,12 @@ Nella pagina proporre all'utente il link per la registrazione qualora non fosse 
             </label>
             <input type="password" id="pw" name="password" placeholder="Enter your Password" required>
 
+            <div class="divButton">
             <button type="submit" onclick="solve()">
                 Submit
             </button>
+        </div>
         </form>
+    </div>
     </body>
 </html>
