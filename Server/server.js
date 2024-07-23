@@ -20,3 +20,14 @@ app.get('/formRegistrazione', (req, res) => {
 
 //Per farlo partire: node servier.linux o qualcosa del genere
 
+//pagina di gestione dei dati della form se il metodo è GET
+app.get('/gestisciDatiForm', (req, res) => {
+    console.log(req.query.fname);
+    res.send("<html>Buona serata a tutti</html>");
+    });
+
+//pagina di gestione dei dati della form se il metodo è POST
+app.post('/gestisciDatiForm', (req, res) => {
+    console.log(req.body.fname);
+    res.send("<html>Buona serata a tutti</html>");
+    });
