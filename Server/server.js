@@ -18,6 +18,13 @@ app.get('/formRegistrazione', (req, res) => {
     res.sendFile("formSemplice.html", { root: './htdoc' });
     });
 
+
+//pagina di invio della form
+app.get('/sendfile', (req, res) => {
+    console.log("Mi hai chiesto la form di registrazione");
+    res.sendFile("sendfile.html", { root: './htdoc' });
+    });
+
 //Per farlo partire: node servier.linux o qualcosa del genere
 
 //pagina di gestione dei dati della form se il metodo è GET
