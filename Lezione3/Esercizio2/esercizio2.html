@@ -16,42 +16,100 @@ I dati che raccoglie la form devono essere, tra gli altri:
 <html>
     <head>
         <title>Esercizio 2: costruiamo una form per la raccolta dei dati di uno studente che si deve iscrivere all'ITS</title>
+    
+        <style>
+          body {background-color: burlywood; font-family: sans-serif;}
+    
+          .main {background-color: whitesmoke; width: 350px; height: 318px; margin: auto; margin-top: 100px; text-align: center; border-radius: 3px;}
+          
+          label {display: block; margin-top: 15px; text-align: left; margin-left: 5px;}
+    
+          input {margin-top: 5px; width: 90%; margin-left: 0px;}
+
+          input[type="radio"] {width: 5%;}
+
+          button {display: block; margin-top: 20px; width: 100%;}
+          
+        </style>
+    
     </head>
+
+   
+
     <body>
+
+      <div class="main">
+
         <form action="" method="post"> <!-- Set the action attribute to the URL where the form data will be sent (usually to a server-side script) -->
             <label> <!-- la data di nascita -->  <!-- <label for=""> -->
               Date of birth:
             </label>
+
+            <!-- <br> -->
+
             <input type="date" name="" required>
                 
+            <!-- <br> -->
+
+
             <label> <!-- il file contenente il CV -->
                 Curriculum:
             </label>
+
+            <!-- <br> -->
+
+
             <input type="file" name="" placeholder="" required>
             <!-- <input type="reset" value="remove"> -->
 
             <!-- -->
     
+            <!-- <br> -->
+
             <label> <!-- sesso -->
-              Education:
+              Sex:
             </label>
-            <input type="text" name="" required>
+
+            <!-- <br> -->
+
+
+            <input type="radio" name="Sex" required>Male
+
+            <input type="radio" name="Sex" required>Female
+
+            <!-- <br> -->
+
 
             <label> <!-- indirizzo di residenza -->
               Address:
             </label>
+
+            <!-- <br> -->
+
             <!-- <textarea name="address"></textarea> -->
             <input type="" name="" placeholder="Enter your address" required>
                 
+            <!-- <br> -->
+
+
             <label> <!-- istruzione -->
               Education:
             </label>
+
+            <!-- <br> -->
+
+
             <input type="text" name="" placeholder="???" required> 
+
+            <!-- <br> -->
+
 
             <button type="submit" onclick="solve()">
                 Submit
             </button>
         </form>
+
+      </div>
     </body>
 </html>
 
